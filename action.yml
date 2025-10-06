@@ -1,0 +1,20 @@
+name: Root.io Remediation
+description: Run remediation using custom Docker image
+
+inputs:
+  ORG_ID:
+    required: true
+    description: Root.io organization ID
+  ROOT_API_TOKEN:
+    required: true
+    description: Root.io API token
+  CREDS_ID:
+    required: true
+    description: Registry credentials ID
+  IMAGE_REPO_TAG:
+    required: true
+    description: Image to remediate
+
+runs:
+  using: 'docker'
+  image: 'docker://zoheb3454/rootio-remediation-client:latest'
