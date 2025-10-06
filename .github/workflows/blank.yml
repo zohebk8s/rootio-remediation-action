@@ -1,0 +1,5 @@
+name: Root.io Remediation
+description: Run remediation using custom Docker image
+runs:
+  using: 'docker'
+  image: 'docker://zoheb3454/rootio-remediation-client:latest'
