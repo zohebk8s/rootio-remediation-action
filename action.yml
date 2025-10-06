@@ -18,3 +18,8 @@ inputs:
 runs:
   using: 'docker'
   image: 'docker://zoheb3454/rootio-remediation-client:latest'
+  args:
+    - ${{ inputs.ORG_ID }}
+    - ${{ inputs.ROOT_API_TOKEN }}
+    - ${{ inputs.CREDS_ID }}
+    - ${{ inputs.IMAGE_REPO_TAG }}
